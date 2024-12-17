@@ -1,47 +1,75 @@
-
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+/* Navbar Styles */
 .navbar {
-    background-color: #004d40;
+    background-color: #004080;
     position: fixed;
     top: 0;
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-#login{
-    position: absolute;
-    margin-right: 20px;
-    right:150px
-}
-#signup{
-    position: absolute;
-    right:50px
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.navbar a {
-    color: white;
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #00695c;
-    transform: scale(1.1);
+.navbar-nav {
+    display: flex;
+    list-style: none;
 }
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav a:hover {
+    background-color: #00509e;
+}
+
+#login,
+#signup {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#login:hover,
+#signup:hover {
+    background-color: #004d40;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -52,24 +80,24 @@ body {
 
 .service-card {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 25vw;
-    height: 50vh;
-    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(58, 57, 57, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-image {
-    height: 150px;
-    background-color: #004d40;
-    background-image: url('signup image.png');
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
@@ -78,30 +106,40 @@ body {
     padding: 20px;
 }
 
-.service-content h3 {
-    color: #00695c;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.service-content h2 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 10px;
 }
 
 .service-content p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service-content a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.service-content a:hover {
+    color: #004d40;
 }
 
 footer {
-    background-color: #004d40;
+    background-color: #004080;
     color: white;
-    width: 100%;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 footer a {
-    color: #80cbc4;
+    color: #4fc3f7;
     text-decoration: none;
 }
 

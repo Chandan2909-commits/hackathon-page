@@ -1,69 +1,100 @@
-
-
-
-body {
+/* Base Reset */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
 .navbar {
-    background-color: #004d40;
+    background-color: #004080;
     position: fixed;
     top: 0;
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-#login{
-    position: absolute;
-    margin-right: 20px;
-    right:150px
-}
-#signup{
-    position: absolute;
-    right:50px
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.navbar a {
-    color: white;
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
     padding: 10px 15px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #00695c;
-    transform: scale(1.1);
+.navbar-nav a:hover {
+    background-color: #00509e;
 }
 
+#login,
+#signup {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#login:hover,
+#signup:hover {
+    background-color: #004d40;
+}
+
+/* Main Section Styles */
 main {
     margin-top: 80px;
-  
     padding: 40px 20px;
 }
 
+/* Content Section */
 .content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Heading Styles */
 h1 {
     font-size: 2.5rem;
-    color: #004d40;
+    color: #004080;
     margin-bottom: 40px;
     text-align: center;
 }
 
+/* FAQ Item Styles */
 .faq-item {
     background-color: white;
     border-radius: 8px;
@@ -80,7 +111,7 @@ h1 {
 
 .faq-item h2 {
     font-size: 1.8rem;
-    color: #00695c;
+    color: #00509e;
     cursor: pointer;
     margin: 0;
 }
@@ -96,22 +127,21 @@ h1 {
     display: block;
 }
 
+/* Footer Styles */
 footer {
-    background-color: #004d40;
+    background-color: #004080;
     color: white;
-    width: 100%;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 footer a {
-    color: #80cbc4;
+    color: #4fc3f7;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
-
