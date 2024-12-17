@@ -60,17 +60,17 @@ body {
 
 #login,
 #signup {
-    background-color: #00796b;
-    color: white;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
     padding: 10px 15px;
     border-radius: 5px;
-    text-decoration: none;
     transition: background-color 0.3s;
 }
 
 #login:hover,
 #signup:hover {
-    background-color: #004d40;
+    background-color: #00509e;
 }
 
 /* Main Section Styles */
