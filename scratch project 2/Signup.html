@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
 
 
 </head>
@@ -23,38 +23,42 @@
         </div>
     </header>
     <main>
-        <div class="container">
-
-        <div class="login-container">
-            <div class="image-section"></div>
-            <div class="form-section">
-                <p>SignUp</p>
-                <form>
-                    <div class="form-group">
-                        <label for="email">E-mail :</label>
-                        <input type="text" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="username">Mobile :</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password :</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Sign Up</button>
-                    </div>
-                </form>
+        <section class="container">
+            <div class="login-container">
+                <div class="image-section">
+                    <img src="signup.png" alt="Illustration representing sign up process" class="login-image">
+                </div>
+                <div class="form-section">
+                    <h2>Create an Account</h2>
+                    <form action="/submit-signup" method="POST">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="Login.html">Log In</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
     </main>
+    
     <footer>
-        <p>Developed by <strong><i>Chandan Kumar</i></strong></p>
+        <p>Developed by <strong>Chandan Kumar</strong></p>
         <p><a href="mailto:chandan153377@gmail.com">chandan153377@gmail.com</a></p>
-        <p>&copy; 2024 <strong>Chandan Kumar</strong>. All rights reserved.</p>
-        <p>Agenda: <em>"Turning ideas into impactful solutions."</em></p>
+        <p>&copy; 2024 SBI Fraud Detection. All rights reserved.</p>
     </footer>
 </body>
 
